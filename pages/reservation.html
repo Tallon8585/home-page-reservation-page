@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservations</title>
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/reservation-styles.css" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="mid-navbar">
+        <h1>Reservations</h1>
+      </div>
+      <div class="right-navbar">
+        <a href="../index.html">Home</a>
+      </div>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-header">
+        <h3>Welcome to</h3>
+        <h3>The Reservation Page</h3>
+        <h5>Please fill out all the information below!</h5>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <p>
+        You're almost done booking the bst flight of you life! With Ghost
+        Airlines your problems are still your problems but that's how we manage
+        our crews happiness. Our flghts are the cheapest out there because of
+        our 2nd hand planes but that just means more money in your pocket for
+        your crazy adventures. So just fill out the information below or else...
+      </p>
+      <form action="https://httpbin.org/post" method="post">
+        <div class="reservation-form">
+          <h1>Reservation Form</h1>
+          <div class="email">
+            <label for="email">Email:</label>
+            <input placeholder="email" name="email" id="email" required />
+          </div>
+          <div class="first-name">
+            <label for="first-name">First Name:</label>
+            <input placeholder="first name" name="first-name" id="first-name" />
+          </div>
+          <div class="last-name">
+            <label for="last-name">Last Name:</label>
+            <input placeholder="last name" name="last-name" id="last-name" />
+          </div>
+          <div class="phone">
+            <label for="phone-#">Phone #:</label>
+            <input placeholder="phone #" name="phone-#" id="phone-#" />
+          </div>
+          <div class="departure-date">
+            <label for="departue-date">Departure Date:</label>
+            <input
+              placeholder="departure date"
+              name="departure-date"
+              id="departure-date"
+            />
+          </div>
+          <div class="return-date">
+            <label for="return-date">Return Date:</label>
+            <input
+              placeholder="return date"
+              name="return-date"
+              id="return-date"
+            />
+          </div>
+          <div class="radio-btns">
+            <h3>Choose Smoking or Non-Smoking Seats</h3>
+            <input
+              type="radio"
+              id="smoking"
+              name="seat-section"
+              value="Smoking"
+            />
+            <label for="smoking">Smoking</label><br />
+            <input
+              type="radio"
+              id="non-smoking"
+              name="seat-section"
+              value="Non-Smoking"
+            />
+            <label for="non-smoking">Non-Smoking</label><br />
+          </div>
+          <div class="check-boxes">
+            <h3>Choose your ammeneties</h3>
+            <input
+              type="checkbox"
+              id="food-snack"
+              name="ammeneties"
+              value="Food-Snack"
+            />
+            <label for="food-snack">Food/Beverage</label>
+            <input
+              type="checkbox"
+              name="ammeneties"
+              id="pillow"
+              value="Pillow"
+            />
+            <label for="pillow">Pillow</label>
+            <input
+              type="checkbox"
+              name="ammeneties"
+              id="obituary"
+              value="Obituary"
+            />
+            <label for="obituary">Obituary</label>
+          </div>
+          <div class="seating-section">
+            <h3>Please Choose Your Seating Section</h3>
+          </div>
+          <div class="drop-down-selector">
+            <label for="seat">Choose a section</label>
+            <select name="seat" id="seat" required>
+              <option value="" style="display: none"></option>
+              <option value="first-class">First Class</option>
+              <option value="coach">Coach</option>
+              <option value="grave-yard">GraveYard</option>
+            </select>
+          </div>
+          <div class="submit-btn">
+            <input type="submit" value="Submit" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <div class="left-footer">
+        <a
+          href="https://www.rd.com/list/scariest-moments-pilots/"
+          target="_blank"
+          >Terms & Conditions</a
+        >
+      </div>
+      <div class="right-footer">
+        <a href="../index.html">Return Home</a>
+      </div>
+    </div>
+  </body>
+</html>
